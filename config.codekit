@@ -57,6 +57,17 @@
 		"outputStyle": 0,
 		"syntaxCheckerStyle": 1
 		},
+	"\/app\/components\/PostMenu.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/app\/components\/PostMenu.js",
+		"outputAbbreviatedPath": "\/app\/components\/min\/PostMenu-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 1
+		},
 	"\/app\/css\/style.scss": {
 		"createSourceMap": 0,
 		"debugStyle": 0,
@@ -145,14 +156,14 @@
 		},
 	"\/scripts\/posts.js": {
 		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 1,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/scripts\/posts.js",
 		"outputAbbreviatedPath": "\/scripts\/min\/posts-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 0,
-		"syntaxCheckerStyle": 0
+		"syntaxCheckerStyle": 1
 		},
 	"\/scripts\/prompts.js": {
 		"fileType": 64,
