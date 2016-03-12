@@ -1,6 +1,27 @@
+body {
+  background: #d1d6d8;
+  font-family: "Source Sans Pro", sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Patua One", cursive; }
+
+svg {
+  width: 35px; }
+
+.navbar {
+  background: #c43929; }
+
+.view-title {
+  font-size: 2.6em;
+  margin: 5px 10px 0 87px;
+  color: #fff;
+  display: inline-block;
+  font-family: "Patua One", cursive;
+  text-align: center; }
+
 .fa-ellipsis-v {
   font-size: 2em;
-  color: white; }
+  color: #f4c715; }
 
 .menu .btn {
   width: 100%; }
@@ -34,26 +55,39 @@
   opacity: .4;
   margin: 10% 0 0 0; }
 
-.feed.response {
-  border: 1px solid #eee;
-  padding: 20px; }
-  .feed.response .user-name, .feed.response .user-img {
-    float: left;
-    position: block; }
-  .feed.response .user-img {
-    width: 65px; }
-  .feed.response .user-name {
-    padding: 20px 0 0 10px; }
-  .feed.response .time-since-posted {
-    opacity: .45; }
-  .feed.response .activity-name {
-    float: right;
-    margin: -7px 0 0 0; }
-  .feed.response .response-text {
-    padding: 65px 3px 30px 3px; }
-  .feed.response .fa-ellipsis-v {
-    color: #000;
-    position: relative;
-    bottom: 18px;
-    right: 0;
-    float: right; }
+.feed {
+  margin: 0 0 20px 0; }
+  .feed.response {
+    border: 1px solid #eee;
+    padding: 20px;
+    background: #fff; }
+    .feed.response .user-name, .feed.response .user-img {
+      float: left;
+      position: block; }
+    .feed.response .user-img {
+      width: 65px; }
+    .feed.response .user-name {
+      font-family: "Patua One", cursive;
+      padding: 20px 0 0 10px; }
+    .feed.response .time-since-posted {
+      font-family: "Source Sans Pro", sans-serif;
+      opacity: .45; }
+    .feed.response .activity-name {
+      float: right;
+      margin: -7px 0 0 0; }
+    .feed.response .response-text {
+      padding: 65px 3px 30px 3px; }
+    .feed.response .options-open {
+      float: right;
+      position: relative;
+      bottom: 14px;
+      right: -16px; }
+      .feed.response .options-open a {
+        padding: 0 12px 0 0;
+        font-size: 1.2em; }
+    .feed.response .fa-ellipsis-v {
+      color: #f4c715;
+      position: relative;
+      bottom: 18px;
+      right: 0;
+      float: right; }
