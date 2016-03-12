@@ -1,0 +1,59 @@
+.fa-ellipsis-v {
+  font-size: 2em;
+  color: white; }
+
+.menu .btn {
+  width: 100%; }
+
+.prompt h1 {
+  font-size: 2.8em; }
+.prompt p {
+  margin-bottom: 15px;
+  font-size: 23px;
+  font-weight: 200; }
+.prompt .prompt-label {
+  color: #ccc; }
+.prompt .prompt-nav-left, .prompt .prompt-nav-right {
+  font-size: 1.3em;
+  float: right;
+  display: block;
+  position: absolute;
+  bottom: 10px; }
+.prompt .prompt-nav-left {
+  left: 10px; }
+.prompt .prompt-nav-right {
+  right: 10px; }
+.prompt.receive .prompt-label {
+  margin: 10px 0 -20px 0;
+  display: block; }
+.prompt.complete .fa-check {
+  margin: 0 auto;
+  text-align: center;
+  color: green;
+  font-size: 6em;
+  opacity: .4;
+  margin: 10% 0 0 0; }
+
+.feed.response {
+  border: 1px solid #eee;
+  padding: 20px; }
+  .feed.response .user-name, .feed.response .user-img {
+    float: left;
+    position: block; }
+  .feed.response .user-img {
+    width: 65px; }
+  .feed.response .user-name {
+    padding: 20px 0 0 10px; }
+  .feed.response .time-since-posted {
+    opacity: .45; }
+  .feed.response .prompt-name {
+    float: right;
+    margin: -7px 0 0 0; }
+  .feed.response .response-text {
+    padding: 65px 3px 30px 3px; }
+  .feed.response .fa-ellipsis-v {
+    color: #000;
+    position: relative;
+    bottom: 18px;
+    right: 0;
+    float: right; }
