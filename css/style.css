@@ -1,3 +1,21 @@
+.community {
+  background: #17b89e; }
+
+.activity {
+  background: #c43929; }
+
+.journal {
+  background: #f59c1e; }
+
+.user {
+  background: #f4c715; }
+
+.leader {
+  background: #a22e1e; }
+
+.community:hover, .community:focus, .activity:hover, .activity:focus, .journal:hover, .journal:focus, .user:hover, .user:focus, .leader:hover, .leader:focus {
+  opacity: .9; }
+
 body {
   background: #d1d6d8;
   font-family: "Source Sans Pro", sans-serif; }
@@ -10,6 +28,15 @@ svg {
 
 .navbar {
   background: #c43929; }
+
+.nav > li {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 1.8em;
+  font-family: "Patua One", cursive; }
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  background-color: initial; }
 
 .view-title {
   font-size: 2.6em;

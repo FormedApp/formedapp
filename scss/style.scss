@@ -12,6 +12,27 @@ $grey: #d1d6d8;
 $source: 'Source Sans Pro', sans-serif;
 $patua: 'Patua One', cursive;
 
+.community{
+	background: $green;
+}
+.activity{
+	background: $dark-red;
+}
+.journal{
+	background: $orange;
+}
+.user{
+	background: $yellow;
+}
+.leader{
+	background: $shaded-red;
+}
+.community, .activity, .journal, .user, .leader{
+	&:hover,&:focus {
+		opacity: .9;
+	}
+}
+
 //nav
 body {
 	background: $grey;
@@ -25,6 +46,17 @@ svg {
 }
 .navbar {
 	background: $dark-red;
+}
+
+.nav>li {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.8em;
+    font-family: $patua;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    background-color: initial;
 }
 
 .view-title {
