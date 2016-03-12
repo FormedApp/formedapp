@@ -6,7 +6,7 @@ class App extends Component {
     return (
       <div>
         <h1>
-          Welcome to the react starter test.
+          Welcome to the react starter Test.
         </h1>
       </div>
     );
