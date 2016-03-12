@@ -53,34 +53,37 @@ svg {
 .menu .btn {
   width: 100%; }
 
-.activity h1 {
-  font-size: 2.8em; }
-.activity p {
-  margin-bottom: 15px;
-  font-size: 23px;
-  font-weight: 200; }
-.activity .activity-label {
-  color: #ccc; }
-.activity .activity-nav-left, .activity .activity-nav-right {
-  font-size: 1.3em;
-  float: right;
-  display: block;
-  position: absolute;
-  bottom: 10px; }
-.activity .activity-nav-left {
-  left: 10px; }
-.activity .activity-nav-right {
-  right: 10px; }
-.activity.receive .activity-label {
-  margin: 10px 0 -20px 0;
-  display: block; }
-.activity.complete .fa-check {
-  margin: 0 auto;
-  text-align: center;
-  color: green;
-  font-size: 6em;
-  opacity: .4;
-  margin: 10% 0 0 0; }
+.activity {
+  background: #fff;
+  padding: 6px 23px; }
+  .activity h1 {
+    font-size: 2.5em; }
+  .activity p {
+    margin-bottom: 15px;
+    font-size: 23px;
+    font-weight: 200; }
+  .activity .activity-label {
+    color: #ccc; }
+  .activity .activity-nav-left, .activity .activity-nav-right {
+    font-size: 1.3em;
+    float: right;
+    display: block;
+    position: absolute;
+    bottom: 10px; }
+  .activity .activity-nav-left {
+    left: 10px; }
+  .activity .activity-nav-right {
+    right: 10px; }
+  .activity.receive .activity-label {
+    margin: 10px 0 -20px 0;
+    display: block; }
+  .activity.complete .fa-check {
+    margin: 0 auto;
+    text-align: center;
+    color: green;
+    font-size: 6em;
+    opacity: .4;
+    margin: 10% 0 0 0; }
 
 .feed {
   margin: 0 0 20px 0; }
