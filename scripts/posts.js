@@ -29,7 +29,7 @@ module.posts = {
     prompt_id : 'prompt1',
     private : false,
     type : 'reflection',
-    value : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolore explicabo quis, maxime vitae. Obcaecati, assumenda nam fugiat, adipisci quo odio, animi nisi aspernatur nulla excepturi vero at cumque voluptates?'
+    value : '1. Trees in wintertime die and then come back to life each spring. 2. Friendships that are broken can be mended. 3. People who are at war with one another can come to understanding and find peace.'
   },
 
   post5 : {
@@ -37,7 +37,7 @@ module.posts = {
     prompt_id : 'prompt1',
     private : false,
     type : 'reflection',
-    value : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolore explicabo quis, maxime vitae. Obcaecati, assumenda nam fugiat, adipisci quo odio, animi nisi aspernatur nulla excepturi vero at cumque voluptates?'
+    value : '1. God transforms hearts to love him  2. God transforms situations that seem hopeless into situations where good comes out of them.  3. Sick people can be healed. '
   },
 
   post6 : {
@@ -45,6 +45,6 @@ module.posts = {
     prompt_id : 'prompt1',
     private : false,
     type : 'reflection',
-    value : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolore explicabo quis, maxime vitae. Obcaecati, assumenda nam fugiat, adipisci quo odio, animi nisi aspernatur nulla excepturi vero at cumque voluptates?'
+    value : '1. I have seen God transform people who have no desire to know him become people whose lives are wholly surrendered to him. 2. I have seen examples of people born into poverty and difficulty become people who overcome the odds and make a real difference in the world. 3. I have seen God make angry people into gentle people. 4. I have seen God transform me from spiritually dry and unbelieving into spiritually thirsty and seeking.'
   }
 };
