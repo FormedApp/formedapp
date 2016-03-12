@@ -13,20 +13,19 @@ class Feed extends React.Component {
 		super();
 	}
 
-	renderActivities(key) {
-		console.log(this.props.activities);
-		return <Post key={key} index={key} details={this.props.activities[key]}/>;	
+	renderPosts(key) {
+		let post = this.props.posts[key];
+		let activity = this.props.activities[post.activity_id];
+		return <Post key={key} index={key} activity={activity} post={post}/>;	
 	}
 	
 	render() {
-		var asdf = Object.keys(this.props.activities);
-		console.log(asdf);
 		return(
 			<div>				
-				<ul className="list-of-activities">
-						{Object.keys(this.props.activities).map(this.renderActivities.bind(this))}
+				<ul className="list-of-posts">
+						{Object.keys(this.props.posts).map(this.renderPosts.bind(this))}
 				</ul>
-				<button onClick={this.props.loadActivities}>Load Sample Activities</button>
+				<button onClick={this.props.loadState}>Load Sample Posts</button>
 			</div>
 		);
 	}

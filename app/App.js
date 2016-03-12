@@ -14,26 +14,14 @@ class App extends React.Component {
 		super();
 
 		this.state = {
+			posts : {},
 			activities : {}
 		};
 	}
 
-	componentDidMount() {
-		var localStorageRef = localStorage.getItem('activities');
-
-		if(localStorageRef){
-			this.setState({
-				activities : JSON.parse(localStorageRef)
-			});
-		}
-	}
-
-	componentWillUpdate(nextProps, nextState) {
-		localStorage.setItem('activities', JSON.stringify(nextState.activities) );
-	}
-
-	loadActivities() {
+	loadState() {
 		this.setState({
+			posts : require('./scripts/posts'),
 			activities : require('./scripts/activities')
 		});
 	}
@@ -42,7 +30,7 @@ class App extends React.Component {
     return (
       <div>
       	<Header />
-        <Feed activities={this.state.activities} loadActivities={this.loadActivities.bind(this)} linkState={this.linkState.bind(this)} {...this.props}/>
+        <Feed posts={this.state.posts} activities={this.state.activities} loadState={this.loadState.bind(this)} linkState={this.linkState.bind(this)} {...this.props}/>
         <Footer />
       </div>
     );
