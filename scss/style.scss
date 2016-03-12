@@ -1,7 +1,76 @@
+// pallete
+$dark-red: #c43929;
+$yellow: #f4c715;
+$light-red: #231f20;
+$green: #17b89e;
+$orange: #f59c1e;
+$shaded-red: #a22e1e;
+$shaded-yellow: #c8a512;
+$grey: #d1d6d8;
+
+//fonts
+$source: 'Source Sans Pro', sans-serif;
+$patua: 'Patua One', cursive;
+
+.community{
+	background: $green;
+}
+.activity{
+	background: $dark-red;
+}
+.journal{
+	background: $orange;
+}
+.user{
+	background: $yellow;
+}
+.leader{
+	background: $shaded-red;
+}
+.community, .activity, .journal, .user, .leader{
+	&:hover,&:focus {
+		opacity: .9;
+	}
+}
+
 //nav
+body {
+	background: $grey;
+	font-family: $source;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $patua;
+}
+svg {
+	width: 35px;
+}
+.navbar {
+	background: $dark-red;
+}
+
+.nav>li {
+    padding: 10px 0;
+    text-align: center;
+    font-size: 1.8em;
+    font-family: $patua;
+}
+
+.navbar-default .navbar-nav>li>a:hover, .navbar-default .navbar-nav>li>a:focus {
+    background-color: initial;
+}
+
+.view-title {
+    font-size: 2.6em;
+    margin: 5px 10px 0 87px;
+    color: #fff;
+    display: inline-block;
+    font-family: $patua;
+    text-align: center; 
+}
+
 .fa-ellipsis-v {
 	font-size: 2em;
-	color: white;
+	color: $yellow;
 }
 
 .menu {
@@ -60,9 +129,11 @@
 }
 
 .feed {
+	margin: 0 0 20px 0; 
 	&.response {
 		border: 1px solid #eee;
 		padding: 20px;
+		background: #fff;
 		
 		.user-name, .user-img { 
 			float: left;
@@ -72,9 +143,11 @@
 			width: 65px; 
 		}
 		.user-name {
+			font-family: $patua;
 			padding: 20px 0 0 10px;
 		}
 		.time-since-posted {
+			font-family: $source;
 			opacity: .45;
 		}
 		.activity-name {
@@ -84,8 +157,19 @@
 		.response-text {
 			padding: 65px 3px 30px 3px;
 		}
+		.options-open {
+			float: right;
+			position: relative;
+			bottom: 14px;
+			right: -16px;
+			
+			a {
+				padding:0 12px 0 0;
+				font-size: 1.2em;
+			}
+		}
 		.fa-ellipsis-v {
-			color: #000;
+			color: $yellow;
 		    position: relative;
 		    bottom: 18px;
 		    right: 0;
