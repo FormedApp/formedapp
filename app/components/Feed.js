@@ -1,0 +1,14 @@
+import React, {Component} from 'react';
+import Post from './Post';
+
+class Feed extends Component {
+  render() {
+    return (
+    	<div>
+      		<Post />
+      </div>
+    );
+  }
+}
+
+export default Feed;
