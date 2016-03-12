@@ -22,5 +22,23 @@ module.reflections = {
     prompt_id : 'prompt2',
     value : 'What is one prayer this character might pray that you might also pray today?',
     input_type : 'text'
-  }, 
+  },
+  
+  reflections5 : {
+    prompt_id : 'prompt3',
+    value : 'The disciples had to leave their lives behind to follow Jesus. What would be the hardest thing for you to leave behind? (your friends, family, home, devices, money, reputation, accomplishments)',
+    input_type : 'text'
+  },
+  
+  reflections6 : {
+    prompt_id : 'prompt3',
+    value : 'How good is the good news of the Kingdom of God to these disciples? Indicate your answer on the sliding scale below.',
+    input_type : 'text'
+  },
+  
+  reflections7 : {
+    prompt_id : 'prompt3',
+    value : 'How good is the good news of the Kingdom of God to you today? Indicate your answer on the sliding scale below',
+    input_type : 'text'
+  }
 };
