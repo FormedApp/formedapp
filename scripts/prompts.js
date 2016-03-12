@@ -1,6 +1,6 @@
-// prompts
-module.prompts = {  
-  prompt1 : {
+// activitys
+module.activitys = {  
+  activity1 : {
     track_id : 'track1',
     name : 'From Old to New',
     status : 'published',
@@ -9,7 +9,7 @@ module.prompts = {
     group_id : 1
   },
   
-  prompt2 : {
+  activity2 : {
     track_id : 'track1',
     name : 'From Death to Life',
     status : 'published',
@@ -18,7 +18,7 @@ module.prompts = {
     group_id : 1
   },
 
-  prompt3 : {
+  activity3 : {
     track_id : 'track1',
     name : 'From Kingdom of Self to Kingdom of God',
     status : 'published',

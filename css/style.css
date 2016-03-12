@@ -5,28 +5,28 @@
 .menu .btn {
   width: 100%; }
 
-.prompt h1 {
+.activity h1 {
   font-size: 2.8em; }
-.prompt p {
+.activity p {
   margin-bottom: 15px;
   font-size: 23px;
   font-weight: 200; }
-.prompt .prompt-label {
+.activity .activity-label {
   color: #ccc; }
-.prompt .prompt-nav-left, .prompt .prompt-nav-right {
+.activity .activity-nav-left, .activity .activity-nav-right {
   font-size: 1.3em;
   float: right;
   display: block;
   position: absolute;
   bottom: 10px; }
-.prompt .prompt-nav-left {
+.activity .activity-nav-left {
   left: 10px; }
-.prompt .prompt-nav-right {
+.activity .activity-nav-right {
   right: 10px; }
-.prompt.receive .prompt-label {
+.activity.receive .activity-label {
   margin: 10px 0 -20px 0;
   display: block; }
-.prompt.complete .fa-check {
+.activity.complete .fa-check {
   margin: 0 auto;
   text-align: center;
   color: green;
@@ -46,7 +46,7 @@
     padding: 20px 0 0 10px; }
   .feed.response .time-since-posted {
     opacity: .45; }
-  .feed.response .prompt-name {
+  .feed.response .activity-name {
     float: right;
     margin: -7px 0 0 0; }
   .feed.response .response-text {
