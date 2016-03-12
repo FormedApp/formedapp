@@ -1,0 +1,95 @@
+//nav
+.fa-ellipsis-v {
+	font-size: 2em;
+	color: white;
+}
+
+.menu {
+	.btn {
+		width: 100%; 
+	}
+}
+
+.activity{
+	h1 {
+		font-size: 2.8em;
+	}
+	p {
+		margin-bottom: 15px;
+		font-size: 23px;
+		font-weight: 200;
+	}
+	.activity-label {
+		color: #ccc; 
+	}
+	.activity-nav-left, .activity-nav-right {
+		font-size: 1.3em;
+		float: right;
+		display: block;
+		position: absolute;
+		bottom: 10px;  
+	}
+	.activity-nav-left {
+		left: 10px;
+	}
+	.activity-nav-right {
+		right: 10px;
+	}
+	&.receive {
+		.activity-label {
+			margin: 10px 0 -20px 0;
+		    display: block;
+		}
+	}
+	&.reflect {
+
+	}
+	&.response {
+		
+	}
+	&.complete {
+		.fa-check {
+		    margin: 0 auto;
+		    text-align: center;
+		    color: green;
+		    font-size: 6em;
+		    opacity: .4;
+	        margin: 10% 0 0 0;
+		}
+	}
+}
+
+.feed {
+	&.response {
+		border: 1px solid #eee;
+		padding: 20px;
+		
+		.user-name, .user-img { 
+			float: left;
+			position: block;
+		}
+		.user-img {
+			width: 65px; 
+		}
+		.user-name {
+			padding: 20px 0 0 10px;
+		}
+		.time-since-posted {
+			opacity: .45;
+		}
+		.activity-name {
+			float: right;
+			margin: -7px 0 0 0;
+		}
+		.response-text {
+			padding: 65px 3px 30px 3px;
+		}
+		.fa-ellipsis-v {
+			color: #000;
+		    position: relative;
+		    bottom: 18px;
+		    right: 0;
+		    float: right;
+		}
+	}
+}
