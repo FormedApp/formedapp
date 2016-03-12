@@ -22,6 +22,6 @@ module.responses = {
   
   responses5 : {
     prompt_id : 'prompt3',
-    value : 'Option 2: '
+    value : 'Option 2: On your device or a piece of paper, make a list of things in the Kingdom of Self that you would like to surrender or turn from. In prayer, offer these things to God and then erase the list (or tear it up) to represent God bringing you into a new way of being!'
   },
 };
