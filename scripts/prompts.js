@@ -6,8 +6,7 @@ module.prompts = {
     status : 'published',
     scripture : 'John 10:4',
     intro : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolore explicabo quis, maxime vitae. Obcaecati, assumenda nam fugiat, adipisci quo odio, animi nisi aspernatur nulla excepturi vero at cumque voluptates?',
-    group_id : 1,
-    track_id : 'track1'
+    group_id : 1
   },
   
   prompt2 : {
@@ -16,8 +15,7 @@ module.prompts = {
     status : 'published',
     scripture : 'John 10:6',
     intro : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolore explicabo quis, maxime vitae. Obcaecati, assumenda nam fugiat, adipisci quo odio, animi nisi aspernatur nulla excepturi vero at cumque voluptates?',
-    group_id : 1,
-    track_id : 'track1'
+    group_id : 1
   },
 
   prompt3 : {
@@ -26,7 +24,6 @@ module.prompts = {
     status : 'published',
     scripture : 'John 10:7',
     intro : 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa dolore explicabo quis, maxime vitae. Obcaecati, assumenda nam fugiat, adipisci quo odio, animi nisi aspernatur nulla excepturi vero at cumque voluptates?',
-    group_id : 1,
-    track_id : 'track1'
+    group_id : 1
   }
 };
