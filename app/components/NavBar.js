@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class NavBar extends Component {
+class NavBar extends React.Component {
   render() {
     return (
       		<nav className="navbar navbar-default">

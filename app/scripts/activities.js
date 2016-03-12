@@ -1,5 +1,5 @@
-// activitys
-module.activitys = {  
+// activities
+module.exports = {  
   activity1 : {
     track_id : 'track1',
     name : 'From Old to New',

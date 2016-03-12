@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class Post extends Component {
+class Post extends React.Component {
   render() {
     return (
   		<div className="feed response">
