@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin'); 
 
 var HTMLWebpackPlugin = new HtmlWebpackPlugin({
   template:   'C:/Projects/formedapp/app/index.html',
@@ -28,8 +29,12 @@ module.exports = {
 				query: {
 					presets: ['es2015', 'react']
 				}
-			}
+			},
+      {
+        test: /\.scss$/,
+        loaders: ["style", "css", "sass"]
+      }
 		]
 	},
-  plugins: [HTMLWebpackPlugin, HotReloader]
+  plugins: [HTMLWebpackPlugin, HotReloader, new ExtractTextPlugin('[name].css')]
 };

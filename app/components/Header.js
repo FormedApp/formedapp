@@ -5,7 +5,7 @@ class Header extends Component {
     return (
       <div>
         <h1>
-          Header
+          Header Test 3
         </h1>
       </div>
     );
