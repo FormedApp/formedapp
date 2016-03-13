@@ -34,23 +34,23 @@ class App extends React.Component {
 	}
 
 
-  render() {
-	let { route } = this.state;
-	let content;
+	render() {
+		let { route } = this.state;
+		let content;
 
 
-	if(route === 'community') {
-        	content = <Feed posts={this.state.posts} activities={this.state.activities} {...this.props}/>;
+		if(route === 'community') {
+			content = <Feed posts={this.state.posts} activities={this.state.activities} {...this.props}/>;
+		}
+
+		return (
+			<div>
+			<NavBar navChangeCallback={this.handleNavChange} />
+			{content}		
+			<Footer />
+			</div>
+		);
 	}
-
-    return (
-      <div>
-	<NavBar navChangeCallback={this.handleNavChange} />
-	{content}		
-        <Footer />
-      </div>
-    );
-  }
 };
 
 export default App;
