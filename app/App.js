@@ -6,6 +6,7 @@ import Activity from "./components/Activity";
 import Receive from "./components/Receive";
 import Response from "./components/Response";
 import Success from "./components/Success";
+import Profile from "./components/Profile";
 import Feed from "./components/Feed";
 import CSS from "./css/style.scss";
 import autobind from 'autobind-decorator';
@@ -56,6 +57,8 @@ class App extends React.Component {
 			content = <Success navChangeCallback={this.handleNavChange} {...this.props}/>;
 		} else if(route === 'journal') {
 			content = <Feed data={this.state.journal} {...this.props}/>;
+		} else if(route === 'profile') {
+			content = <Profile {...this.props}/>;
 		} else {
 			//back to community
 			content = <Feed data={this.state.posts} {...this.props}/>;

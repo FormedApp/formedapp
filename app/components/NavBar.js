@@ -23,7 +23,7 @@ class NavBar extends React.Component {
 						<li className="community"><a href="#" onClick={this.handleClick.bind(this, 'community')}>Community</a></li>
 						<li className="activity"><a href="#" onClick={this.handleClick.bind(this, 'activity')}>Activity</a></li>
 						<li className="journal"><a href="#" onClick={this.handleClick.bind(this, 'journal')}>Journal</a></li>
-						<li className="user"><a href="#">User</a></li>
+						<li className="user"><a href="#" onClick={this.handleClick.bind(this, 'profile')}>User</a></li>
 						<li className="leader"><a href="#">Leader</a></li>
 					</ul>
 				</div>
