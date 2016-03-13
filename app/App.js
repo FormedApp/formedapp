@@ -27,6 +27,7 @@ class App extends React.Component {
 		this.state = {
 			posts : require('./scripts/posts'),
 			activities : require('./scripts/activities'),
+			journal : require('./scripts/journal'),
 			route: 'community'
 		};
 		this.handleNavChange = this.handleNavChange.bind(this);
@@ -53,6 +54,8 @@ class App extends React.Component {
 			content = <Response data={this.state.activities} navChangeCallback={this.handleNavChange} {...this.props}/>;
 		} else if(route === 'success') {
 			content = <Success navChangeCallback={this.handleNavChange} {...this.props}/>;
+		} else if(route === 'journal') {
+			content = <Feed data={this.state.journal} {...this.props}/>;
 		} else {
 			//back to community
 			content = <Feed data={this.state.posts} {...this.props}/>;
