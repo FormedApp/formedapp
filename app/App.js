@@ -40,7 +40,7 @@ class App extends React.Component {
 
 
 	if(route === 'community') {
-        	content = <Feed posts={this.state.posts} activities={this.state.activities} {...this.props}/>;
+        	content = <Feed data={this.state.posts} {...this.props}/>;
 	}
 
     return (
