@@ -177,3 +177,23 @@ svg {
 		}
 	}
 }
+
+.track {
+	&.activity {
+		background: $dark-red;
+		color: #FFF; 
+		text-align: center;
+		padding: 10px;
+		margin: 0 0 24px;
+		&:hover {
+			cursor: pointer;
+		}
+		
+		.activity-name {
+			padding: 10px 0 18px 0; 
+		}
+		.track-name {
+			margin: -10px 0 0 0;
+		}
+	}
+}
