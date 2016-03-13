@@ -3,16 +3,16 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin'); 
 
 var HTMLWebpackPlugin = new HtmlWebpackPlugin({
-  template:   'C:/Projects/formedapp/app/index.html',
+  template:   './app/index.html',
   hash: true,
   filename: 'index.html',
-  inject: 'body'
+  inject: 'body',
 });
 var HotReloader = new webpack.HotModuleReplacementPlugin();
 
 module.exports = {
   entry: [
-    'webpack-dev-server/client?http://localhost:8080',
+    'webpack-dev-server/client?http://localhost:3000',
     'webpack/hot/only-dev-server',
     './app/App.js'
   ],
@@ -20,6 +20,9 @@ module.exports = {
     "publicPath": "/",
     path: 'dist',
     filename: 'index_bundle.js',
+  },
+  devServer: {
+    port: 3000
   },
   module: {
 		loaders: [

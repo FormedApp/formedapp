@@ -1,28 +1,45 @@
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import {Router, Route} from 'react-router';
-import { createHistory } from 'history';
-
-/*
-	Import Components
-*/
-
-import NotFound from "./components/NotFound";
-import Main from "./components/Main";
-import Login from "./components/Login";
-
-/*
-	Routes
-*/
-
-var routes = (
-
-<Router history={createHistory()}>
-	<Route path="/" component={Main} />
-	<Route path="/feed" component={Main} />
-	<Route path="*" component={NotFound} />
-</Router>
-	);
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Feed from "./components/Feed";
+import CSS from "./css/style.scss";
+import autobind from 'autobind-decorator';
+import reactMixin from 'react-mixin';
+import Catalyst from 'react-catalyst';
 
 
-ReactDOM.render(routes, document.querySelector('#root'));
+@autobind
+class App extends React.Component {
+	constructor() {
+		super();
+
+		this.state = {
+			posts : {},
+			activities : {}
+		};
+	}
+
+	loadState() {
+		this.setState({
+			posts : require('./scripts/posts'),
+			activities : require('./scripts/activities')
+		});
+	}
+
+  render() {
+    return (
+      <div>
+	<Header />
+        <Feed posts={this.state.posts} activities={this.state.activities} loadState={this.loadState.bind(this)} linkState={this.linkState.bind(this)} {...this.props}/>
+        <Footer />
+      </div>
+    );
+  }
+}
+
+export default App;
+
+reactMixin.onClass(App, Catalyst.LinkedStateMixin);
+
+ReactDOM.render(<App />, document.querySelector('#root'));
