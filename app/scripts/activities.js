@@ -2,6 +2,7 @@
 module.exports = {  
   activity1 : {
     track_id : 'track1',
+    track_name : 'Chapter John',
     name : 'From Old to New',
     status : 'published',
     scripture : '2 Corinthians 5:17',
@@ -12,6 +13,7 @@ module.exports = {
   
   activity2 : {
     track_id : 'track1',
+    track_name : 'Chapter John',
     name : 'From Death to Life',
     status : 'published',
     scripture : 'Mark 5:21-43',
@@ -22,6 +24,7 @@ module.exports = {
 
   activity3 : {
     track_id : 'track1',
+    track_name : 'Chapter Mark',
     name : 'From Kingdom of Self to Kingdom of God',
     status : 'published',
     scripture : 'Mark 1:14-20',
