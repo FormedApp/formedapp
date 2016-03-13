@@ -14,4 +14,4 @@ class Activity extends React.Component {
   }
 }
 
-export default Activity; 
+export default Activity;

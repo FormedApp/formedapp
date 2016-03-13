@@ -42,7 +42,7 @@ class App extends React.Component {
 		if(route === 'community') {
 			content = <Feed posts={this.state.posts} activities={this.state.activities} {...this.props}/>;
 		} else if(route === 'activity') {
-			content = <Activity />;
+			content = <Activity data={this.state.activities} {...this.props}/>;
 		} else if(route === 'recieve') {
 			content = <Recieve />;
 		} else if(route === 'respond') {
@@ -51,7 +51,7 @@ class App extends React.Component {
 			content = <Success />;
 		} else {
 			//back to community
-			content = <Feed posts={this.state.posts} activities={this.state.activities} {...this.props}/>;
+			content = <Feed data={this.state.posts} {...this.props}/>;
 		}
 
 		return (
