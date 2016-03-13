@@ -41,6 +41,17 @@ class App extends React.Component {
 
 		if(route === 'community') {
 			content = <Feed posts={this.state.posts} activities={this.state.activities} {...this.props}/>;
+		} else if(route === 'activity') {
+			content = <Activity />;
+		} else if(route === 'recieve') {
+			content = <Recieve />;
+		} else if(route === 'respond') {
+			content = <Respond />;
+		} else if(route === 'success') {
+			content = <Success />;
+		} else {
+			//back to community
+			content = <Feed posts={this.state.posts} activities={this.state.activities} {...this.props}/>;
 		}
 
 		return (
