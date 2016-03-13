@@ -3,7 +3,6 @@ import React, {Component} from 'react';
 class Post extends React.Component {
   render() {
   	var data = this.props.data;
-  	var activity = this.props.activity;
     return (
   		<div className="feed response">
 			<img src="images/images.jpg" className="user-img" alt="" />
