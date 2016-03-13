@@ -20,10 +20,8 @@ class Feed extends React.Component {
 	
 	render() {
 		return(
-			<div>				
-				<ul className="">
-						{Object.keys(this.props.data).map(this.renderData.bind(this))}
-				</ul>
+			<div className="container">				
+				{Object.keys(this.props.data).map(this.renderData.bind(this))}
 			</div>
 		);
 	}
