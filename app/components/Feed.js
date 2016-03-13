@@ -22,7 +22,7 @@ class Feed extends React.Component {
 	render() {
 		return(
 			<div>				
-				<ul className="list-of-posts">
+				<ul className="">
 						{Object.keys(this.props.posts).map(this.renderPosts.bind(this))}
 				</ul>
 				<button onClick={this.props.loadState}>Load Sample Posts</button>

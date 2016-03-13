@@ -3,7 +3,7 @@ import NavBar from './NavBar';
 
 class Header extends React.Component {
   render() {
-    return (
+    return ( 
       <div>
 		<NavBar />
       </div>
