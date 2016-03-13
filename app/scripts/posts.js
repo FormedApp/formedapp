@@ -1,7 +1,7 @@
 // posts
 module.exports = {  
   post1 : {
-    user_id : 'user1',
+    user_id : 'Jessica',
     activity_id : 'activity2',
     private : false,
     type : 'response',
@@ -10,7 +10,7 @@ module.exports = {
   },
   
   post2 : {
-    user_id : 'user2',
+    user_id : 'Sammie',
     activity_id : 'activity1',
     private : false,
     type : 'response',
@@ -19,7 +19,7 @@ module.exports = {
   },
 
   post3 : {
-    user_id : 'user3',
+    user_id : 'Jill',
     activity_id : 'activity1',
     private : true,
     type : 'response',
@@ -28,7 +28,7 @@ module.exports = {
   },
 
   post4 : {
-    user_id : 'user1',
+    user_id : 'Jessica',
     activity_id : 'activity1',
     private : false,
     type : 'reflection',
@@ -38,7 +38,7 @@ module.exports = {
   },
 
   post5 : {
-    user_id : 'user2',
+    user_id : 'Sammie',
     activity_id : 'activity1',
     private : false,
     type : 'reflection',
@@ -47,7 +47,7 @@ module.exports = {
   },
 
   post6 : {
-    user_id : 'user3',
+    user_id : 'Jill',
     activity_id : 'activity1',
     private : false,
     type : 'reflection',

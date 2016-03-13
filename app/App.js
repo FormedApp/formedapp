@@ -2,6 +2,10 @@ import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import NavBar from "./components/NavBar";
 import Footer from "./components/Footer";
+import Activity from "./components/Activity";
+import Receive from "./components/Receive";
+import Response from "./components/Response";
+import Success from "./components/Success";
 import Feed from "./components/Feed";
 import CSS from "./css/style.scss";
 import autobind from 'autobind-decorator';
@@ -40,15 +44,15 @@ class App extends React.Component {
 
 
 		if(route === 'community') {
-			content = <Feed posts={this.state.posts} activities={this.state.activities} {...this.props}/>;
+			content = <Feed data={this.state.posts} {...this.props}/>;
 		} else if(route === 'activity') {
-			content = <Activity data={this.state.activities} {...this.props}/>;
-		} else if(route === 'recieve') {
-			content = <Recieve />;
-		} else if(route === 'respond') {
-			content = <Respond />;
+			content = <Activity data={this.state.activities} navChangeCallback={this.handleNavChange} {...this.props}/>;
+		} else if(route === 'receive') {
+			content = <Receive data={this.state.activities} navChangeCallback={this.handleNavChange} {...this.props}/>;
+		} else if(route === 'response') {
+			content = <Response data={this.state.activities} navChangeCallback={this.handleNavChange} {...this.props}/>;
 		} else if(route === 'success') {
-			content = <Success />;
+			content = <Success navChangeCallback={this.handleNavChange} {...this.props}/>;
 		} else {
 			//back to community
 			content = <Feed data={this.state.posts} {...this.props}/>;
