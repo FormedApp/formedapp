@@ -15,8 +15,8 @@ class Profile extends React.Component {
           <div class="logo">
             <img src="./images/logo.png" width="150"/>
           </div>
-          <span>Name: </span> <span>Jill Smith</span><br />
-          <span>Email: </span> <span>jill.smith@formedapp.com</span>
+          <span>Name: </span> <span>Jessica Smith</span><br />
+          <span>Email: </span> <span>jessica.smith@formedapp.com</span>
         </div>
       </div>
       );

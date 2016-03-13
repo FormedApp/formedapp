@@ -10,11 +10,13 @@ class Success extends React.Component {
 
 	render() {
 		return (
-			<div className="container activity complete text-center">
-				<h1>Activity Complete!</h1>
-				<i className="fa fa-check"></i>
-				<a href="#" className="activity-nav-left" onClick={this.handleClick.bind(this, 'response')}><i className="fa fa-chevron-left"></i> Response</a>
-				<a href="#" className="activity-nav-right" onClick={this.handleClick.bind(this, 'community')}>Save <i className="fa fa-chevron-right"></i></a>
+			<div className="container">
+				<div className="activity complete text-center">
+					<h1>Activity Complete!</h1>
+					<i className="fa fa-check"></i>
+					<a href="#" className="activity-nav-left" onClick={this.handleClick.bind(this, 'response')}><i className="fa fa-chevron-left"></i> Response</a>
+					<a href="#" className="activity-nav-right" onClick={this.handleClick.bind(this, 'community')}>Save <i className="fa fa-chevron-right"></i></a>
+				</div>
 			</div>
 			);
 	}
