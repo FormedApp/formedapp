@@ -1,6 +1,12 @@
 import React, {Component} from 'react';
 
 class NavBar extends React.Component {
+  handleClick(newRoute) {
+	if (newRoute) {
+		this.props.navChangeCallback(newRoute);
+	}
+  }
+
   render() {
     return (
   		<nav className="navbar navbar-default">
@@ -14,8 +20,8 @@ class NavBar extends React.Component {
 				</div>
 				<div id="navbar" className="navbar-collapse collapse">
 					<ul className="nav navbar-nav">
-						<li className="community"><a href="#">Community</a></li>
-						<li className="activity"><a href="#">Activity</a></li>
+						<li className="community"><a href="#" onClick={this.handleClick.bind(this, 'community')}>Community</a></li>
+						<li className="activity"><a href="#" onClick={this.handleClick.bind(this, 'activity')}>Activity</a></li>
 						<li className="journal"><a href="#">Journal</a></li>
 						<li className="user"><a href="#">User</a></li>
 						<li className="leader"><a href="#">Leader</a></li>
@@ -25,6 +31,6 @@ class NavBar extends React.Component {
 		</nav>
     ); 
   }
-}
+};
 
 export default NavBar;

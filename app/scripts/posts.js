@@ -5,7 +5,8 @@ module.exports = {
     activity_id : 'activity2',
     private : false,
     type : 'response',
-    value : 'Prayer Goals: 1.) I would like God to transform my relationship with my parents. 2.) I would like God to enter in to some of my friendships and help me know how to better love my friends and share my faith with them.'
+    value : 'Prayer Goals: 1.) I would like God to transform my relationship with my parents. 2.) I would like God to enter in to some of my friendships and help me know how to better love my friends and share my faith with them.',
+    activity_name: "TEST"
   },
   
   post2 : {
