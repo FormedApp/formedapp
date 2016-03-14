@@ -1,7 +1,7 @@
 # formedapp
 An app for youth leaders to help teens read, reflect, and respond to God's word.
 
-Built on ReactJS
+Built on ReactJS + Bootstrap:Yeti
 
 ##Setup
 
@@ -12,3 +12,15 @@ Built on ReactJS
 - Open terminal...
 - $ npm install
 - $ npm start
+
+##Updates
+- Prototype [inVision](http://bit.ly/formedappdemo)
+- Devposts [updates](http://devpost.com/software/formed-app)
+
+##Todo
+- add login/signup/reset-pass components
+- add edit-post component
+- style user page
+- leader component
+- startup firebase
+
