@@ -5,7 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "prestart": "webpack",
-    "start": "webpack-dev-server --content-base dist/"
+    "start": "node server.js"
   },
   "author": "Dustin Reed <dmreedy1@gmail.com> (drdreed.github.io)",
   "dependencies": {
