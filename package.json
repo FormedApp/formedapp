@@ -31,11 +31,10 @@
     "react-router": "^2.0.1",
     "sass-loader": "^3.2.0",
     "style-loader": "^0.13.0",
-    "webpack-dev-server": "^1.14.1",
     "react-dom": "^0.14.2"
   },
   "devDependencies": {
-    
+    "webpack-dev-server": "^1.14.1"
   },
   "repository": {
     "type": "git",
