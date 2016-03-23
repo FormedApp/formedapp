@@ -1,7 +1,7 @@
 // posts
 module.exports = {  
   post1 : {
-    user_id : 'Jessica',
+    user_id : 'JessicaDustin',
     activity_id : 'activity2',
     private : false,
     type : 'response',
