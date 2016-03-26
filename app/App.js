@@ -15,7 +15,7 @@ import Footer from "./components/Footer";
 // accounts comps
 import Login from "./components/Login";
 // import ResetPass from "./components/ResetPass";
-// import Signup from "./components/Signup";
+import Signup from "./components/Signup";
 // pages
 import Feed from "./components/Feed";
 import Activity from "./components/Activity";
@@ -51,6 +51,10 @@ class App extends React.Component {
 
 		if(route === 'login') {
 			content = <Login navChangeCallback={this.handleNavChange} {...this.props}/>;
+		} else if(route === 'signup') {
+			content = <Signup navChangeCallback={this.handleNavChange} {...this.props}/>;
+		} else if(route === 'resetpass') {
+			content = <ResetPass navChangeCallback={this.handleNavChange} {...this.props}/>;
 		} else if(route === 'community') {
 			content = <Feed data={this.state.posts} {...this.props}/>;
 		} else if(route === 'activity') {
@@ -66,8 +70,8 @@ class App extends React.Component {
 		} else if(route === 'profile') {
 			content = <Profile {...this.props}/>;
 		} else {
-			//back to login
-			content = <Login navChangeCallback={this.handleNavChange} {...this.props}/>;
+			//back to community
+			content = <Feed data={this.state.posts} {...this.props}/>;
 		}
 
 		return (

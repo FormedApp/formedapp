@@ -4,25 +4,19 @@ import reactMixin from 'react-mixin';
 import autobind from 'autobind-decorator';
 
 @autobind
-class Login extends React.Component {
+class Signup extends React.Component {
 	handleClick(newRoute) {
 		if (newRoute) {
 			this.props.navChangeCallback(newRoute);
 		}
 	}
-	// goToStore(event) {
-	// 	event.preventDefault();
-	// 	// get the data from the input
-	// 	this.history.pushState(null, '/feed');
-	// 	// transition from <StorPicker/> to <App/>
-	// }
 	render() {
 		return (
-			<div id="login" className="container">
+			<div id="signup" className="container">
 				<div className="row">
 					<div className="col-xs-8 col-xs-offset-2">
 						<form className="login">
-							<h2>Login</h2>
+							<h2>Signup</h2>
 							<fieldset className="form-group">
 								<input type="text" className="form-control" placeholder="Email"/>
 							</fieldset>
@@ -42,6 +36,6 @@ class Login extends React.Component {
 	}
 }
 
-reactMixin.onClass(Login, History);
+reactMixin.onClass(Signup, History);
 
-export default Login;
+export default Signup;
