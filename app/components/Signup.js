@@ -35,6 +35,4 @@ class Signup extends React.Component {
 	}
 }
 
-reactMixin.onClass(Signup, History);
-
 export default Signup;

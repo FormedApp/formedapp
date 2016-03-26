@@ -7,6 +7,7 @@ import autobind from 'autobind-decorator';
 class Login extends React.Component {
 	handleClick(newRoute) {
 		if (newRoute) {
+			console.log(newRoute);
 			this.props.navChangeCallback(newRoute);
 		}
 	}
@@ -22,7 +23,7 @@ class Login extends React.Component {
 				<div className="row">
 					<div className="col-xs-8 col-xs-offset-2">
 						<form className="login">
-							<h2>Login</h2>
+							<img src="./images/logo-wide.png" className="img-responsive" alt="formed app logo"/>
 							<fieldset className="form-group">
 								<input type="text" className="form-control" placeholder="Email"/>
 							</fieldset>
@@ -31,7 +32,7 @@ class Login extends React.Component {
 								<p><a href="#" onClick={this.handleClick.bind(this, 'resetpass')}>Forgot password?</a></p>
 							</fieldset>
 							<fieldset className="form-group">
-								<input type="submit" className="btn btn-primary btn-block" onClick={this.handleClick.bind(this, 'community')} />
+								<input type="submit" value="Login" className="btn btn-primary btn-block" onClick={this.handleClick.bind(this, 'community')} />
 							</fieldset>
 							<p className="text-center"><a href="#" onClick={this.handleClick.bind(this, 'signup')}>Need an account?</a></p>
 						</form>
@@ -41,7 +42,5 @@ class Login extends React.Component {
 		);
 	}
 }
-
-reactMixin.onClass(Login, History);
 
 export default Login;

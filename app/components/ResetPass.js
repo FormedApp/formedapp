@@ -32,6 +32,4 @@ class ResetPass extends React.Component {
 	}
 }
 
-reactMixin.onClass(ResetPass, History);
-
 export default ResetPass;

@@ -41,8 +41,9 @@ $patua: 'Patua One', cursive;
 		opacity: .9;
 	}
 }
-
-//nav
+////
+//main
+////
 body {
 	background: $grey;
 	font-family: $source;
@@ -55,6 +56,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 svg {
 	width: 35px;
+}
+
+
+////
+//nav
+////
+#login img {
+    padding: 30px 0;
 }
 .navbar {
 	background: $dark-red;
@@ -96,6 +105,9 @@ svg {
 	}
 }
 
+////
+// pages
+////
 div.activity{
 	background: #FFF;
 	padding: 20px;
