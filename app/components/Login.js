@@ -18,7 +18,7 @@ class Login extends React.Component {
 	}
 	render() {
 		return (
-			<div className="container">
+			<div id="login" className="container">
 				<div className="row">
 					<div className="col-xs-8 col-xs-offset-2">
 						<form className="login">
@@ -28,11 +28,12 @@ class Login extends React.Component {
 							</fieldset>
 							<fieldset className="form-group">
 								<input type="password" className="form-control" placeholder="Password"/>
+								<p><a href="#" onClick={this.handleClick.bind(this, 'resetpass')}>Forgot password?</a></p>
 							</fieldset>
 							<fieldset className="form-group">
 								<input type="submit" className="btn btn-primary btn-block" onClick={this.handleClick.bind(this, 'community')} />
 							</fieldset>
-							<p className="text-center"><a href="#" onClick={this.handleClick.bind(this, 'signup')}>Signup?</a></p>
+							<p className="text-center"><a href="#" onClick={this.handleClick.bind(this, 'signup')}>Need An Account?</a></p>
 						</form>
 					</div>
 				</div>
