@@ -4,7 +4,7 @@ import reactMixin from 'react-mixin';
 import autobind from 'autobind-decorator';
 
 @autobind
-class Signup extends React.Component {
+class ResetPass extends React.Component {
 	handleClick(newRoute) {
 		if (newRoute) {
 			this.props.navChangeCallback(newRoute);
@@ -16,17 +16,14 @@ class Signup extends React.Component {
 				<div className="row">
 					<div className="col-xs-8 col-xs-offset-2">
 						<form className="login">
-							<h2>Signup</h2>
+							<h2>Reset Password</h2>
 							<fieldset className="form-group">
 								<input type="text" className="form-control" placeholder="Email"/>
 							</fieldset>
 							<fieldset className="form-group">
-								<input type="password" className="form-control" placeholder="Password"/>
+								<input type="submit" value="Reset" className="btn btn-primary btn-block" onClick={this.handleClick.bind(this, 'login')} />
 							</fieldset>
-							<fieldset className="form-group">
-								<input type="submit" value="Create Account" className="btn btn-primary btn-block" onClick={this.handleClick.bind(this, 'community')} />
-							</fieldset>
-							<p className="text-center"><a href="#" onClick={this.handleClick.bind(this, 'signin')}>Already have an account?</a></p>
+							<p className="text-center"><a href="#" onClick={this.handleClick.bind(this, 'login')}>Ready to login?</a></p>
 						</form>
 					</div>
 				</div>
@@ -35,6 +32,6 @@ class Signup extends React.Component {
 	}
 }
 
-reactMixin.onClass(Signup, History);
+reactMixin.onClass(ResetPass, History);
 
-export default Signup;
+export default ResetPass;

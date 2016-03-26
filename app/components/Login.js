@@ -33,7 +33,7 @@ class Login extends React.Component {
 							<fieldset className="form-group">
 								<input type="submit" className="btn btn-primary btn-block" onClick={this.handleClick.bind(this, 'community')} />
 							</fieldset>
-							<p className="text-center"><a href="#" onClick={this.handleClick.bind(this, 'signup')}>Need An Account?</a></p>
+							<p className="text-center"><a href="#" onClick={this.handleClick.bind(this, 'signup')}>Need an account?</a></p>
 						</form>
 					</div>
 				</div>

@@ -14,7 +14,7 @@ import Footer from "./components/Footer";
 */
 // accounts comps
 import Login from "./components/Login";
-// import ResetPass from "./components/ResetPass";
+import ResetPass from "./components/ResetPass";
 import Signup from "./components/Signup";
 // pages
 import Feed from "./components/Feed";
@@ -70,8 +70,8 @@ class App extends React.Component {
 		} else if(route === 'profile') {
 			content = <Profile {...this.props}/>;
 		} else {
-			//back to community
-			content = <Feed data={this.state.posts} {...this.props}/>;
+			//back to Login
+			content = <Login navChangeCallback={this.handleNavChange} {...this.props}/>;
 		}
 
 		return (
