@@ -26,7 +26,7 @@ class Signup extends React.Component {
 							<fieldset className="form-group">
 								<input type="submit" value="Create Account" className="btn btn-primary btn-block" onClick={this.handleClick.bind(this, 'community')} />
 							</fieldset>
-							<p className="text-center"><a href="#" onClick={this.handleClick.bind(this, 'signin')}>Already have an account?</a></p>
+							<p className="text-center"><a href="#" onClick={this.handleClick.bind(this, 'login')}>Already have an account?</a></p>
 						</form>
 					</div>
 				</div>

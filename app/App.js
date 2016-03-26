@@ -76,9 +76,9 @@ class App extends React.Component {
 
 		return (
 			<div>
-			<NavBar navChangeCallback={this.handleNavChange} />
-			{content}		
-			<Footer />
+				<NavBar navChangeCallback={this.handleNavChange} />
+				{content}		
+				<Footer />
 			</div>
 		);
 	}
