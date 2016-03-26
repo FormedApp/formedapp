@@ -46,14 +46,18 @@ class App extends React.Component {
 
 	render() {
 		let { route } = this.state;
+		let nav = <NavBar navChangeCallback={this.handleNavChange} />;
 		let content;
 
 
 		if(route === 'login') {
+			nav = false;
 			content = <Login navChangeCallback={this.handleNavChange} {...this.props}/>;
 		} else if(route === 'signup') {
+			nav = false;
 			content = <Signup navChangeCallback={this.handleNavChange} {...this.props}/>;
 		} else if(route === 'resetpass') {
+			nav = false;
 			content = <ResetPass navChangeCallback={this.handleNavChange} {...this.props}/>;
 		} else if(route === 'community') {
 			content = <Feed data={this.state.posts} {...this.props}/>;
@@ -76,7 +80,7 @@ class App extends React.Component {
 
 		return (
 			<div>
-				<NavBar navChangeCallback={this.handleNavChange} />
+				{nav}
 				{content}		
 				<Footer />
 			</div>
