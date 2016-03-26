@@ -12,6 +12,15 @@ $grey: #d1d6d8;
 $source: 'Source Sans Pro', sans-serif;
 $patua: 'Patua One', cursive;
 
+.btn-primary {
+	background: $dark-red;
+	border: $dark-red;
+	&:hover,&:focus {
+		background: $shaded-red;
+		border: $dark-red;
+	}
+}
+
 .community{
 	background: $green;
 }
