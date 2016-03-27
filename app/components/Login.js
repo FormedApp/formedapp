@@ -10,13 +10,8 @@ class Login extends React.Component {
 			this.props.navChangeCallback(newRoute);
 		}
 	}
-	// goToStore(event) {
-	// 	event.preventDefault();
-	// 	// get the data from the input
-	// 	this.history.pushState(null, '/feed');
-	// 	// transition from <StorPicker/> to <App/>
-	// }
-	render() {
+
+  render() {
 		return (
 			<div id="login" className="container">
 				<div className="row">
@@ -31,7 +26,7 @@ class Login extends React.Component {
 								<p><a href="#" onClick={this.handleClick.bind(this, 'resetpass')}>Forgot password?</a></p>
 							</fieldset>
 							<fieldset className="form-group">
-								<input type="submit" value="Login" className="btn btn-primary btn-block" onClick={this.handleClick.bind(this, 'community')} />
+								<input type="button" value="Login" className="btn btn-primary btn-block" onClick={this.handleClick.bind(this, 'community')} />
 							</fieldset>
 							<p className="text-center"><a href="#" onClick={this.handleClick.bind(this, 'signup')}>Need an account?</a></p>
 						</form>
