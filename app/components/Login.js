@@ -7,7 +7,6 @@ import autobind from 'autobind-decorator';
 class Login extends React.Component {
 	handleClick(newRoute) {
 		if (newRoute) {
-			console.log(newRoute);
 			this.props.navChangeCallback(newRoute);
 		}
 	}
