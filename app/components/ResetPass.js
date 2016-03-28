@@ -21,7 +21,7 @@ class ResetPass extends React.Component {
 								<input type="text" className="form-control" placeholder="Email"/>
 							</fieldset>
 							<fieldset className="form-group">
-								<input type="submit" value="Reset" className="btn btn-primary btn-block" onClick={this.handleClick.bind(this, 'login')} />
+								<input type="button" value="Reset" className="btn btn-primary btn-block" onClick={this.handleClick.bind(this, 'login')} />
 							</fieldset>
 							<p className="text-center"><a href="#" onClick={this.handleClick.bind(this, 'login')}>Ready to login?</a></p>
 						</form>

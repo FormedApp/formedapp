@@ -24,7 +24,7 @@ class Signup extends React.Component {
 								<input type="password" className="form-control" placeholder="Password"/>
 							</fieldset>
 							<fieldset className="form-group">
-								<input type="submit" value="Create Account" className="btn btn-primary btn-block" onClick={this.handleClick.bind(this, 'community')} />
+								<input type="button" value="Create Account" className="btn btn-primary btn-block" onClick={this.handleClick.bind(this, 'community')} />
 							</fieldset>
 							<p className="text-center"><a href="#" onClick={this.handleClick.bind(this, 'login')}>Already have an account?</a></p>
 						</form>
