@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import EditPost from './EditPost';
 
 class Post extends React.Component {
   render() {
@@ -10,7 +11,7 @@ class Post extends React.Component {
 			<span className="time-since-dataed">5 mins ago</span></p>
 			<p className="activity-label"><a className="activity-name">{data.activity_name}</a></p>
 			<p className="response-text">{data.value}</p>
-			<a href="#" className="options" data-toggle="modal" data-target="#optionsModal"><i className="fa fa-ellipsis-v"></i></a>
+			<EditPost/>
 		</div>
     );
   }
