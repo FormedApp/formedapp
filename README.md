@@ -18,7 +18,6 @@ Built on ReactJS + Bootstrap:Yeti
 - Devposts [updates](http://devpost.com/software/formed-app)
 
 ##Todo
-- add login/signup/reset-pass components
 - add edit-post component
 - style user page
 - leader component
