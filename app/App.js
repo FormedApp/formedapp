@@ -24,6 +24,8 @@ import Response from "./components/Response";
 import Success from "./components/Success";
 import Profile from "./components/Profile";
 
+import Rebase from 're-base';
+var base = Rebase.createClass('https://formed.firebaseio.com/');
 
 class App extends React.Component {
 	
@@ -36,6 +38,10 @@ class App extends React.Component {
 			route: 'login' // defult route on load
 		};
 		this.handleNavChange = this.handleNavChange.bind(this);
+	}
+
+	componentDidMount() {
+		base.syncState('posts',{ context: this, state: 'posts'});
 	}
 
 	handleNavChange(newRoute) {
