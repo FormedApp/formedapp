@@ -16,10 +16,13 @@ Built on ReactJS + Bootstrap:Yeti
 ##Updates
 - Prototype [inVision](http://bit.ly/formedappdemo)
 - Devposts [updates](http://devpost.com/software/formed-app)
+- Issues tracking [waffle.io](https://waffle.io/FormedApp/formedapp)
 
 ##Todo
-- add edit-post component
-- style user page
-- leader component
-- startup firebase
+- {X} add edit-post component
+- { } style user page
+- { } leader component
+- {X} startup firebase
+- { } live feeds
+- { } user accounts
 
