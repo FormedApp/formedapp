@@ -16,7 +16,7 @@ module.exports = {
     './app/App.js'
   ],
   output: {
-	filename: 'public/index_bundle.js',
+	  filename: './public/index_bundle.js',
   },
   devServer: {
     port: 3000
