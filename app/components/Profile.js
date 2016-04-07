@@ -13,7 +13,7 @@ class Profile extends React.Component {
       <div className="container">
         <div className="col-md-6 col-md-offset-3 profile text-center">
           <div className="logo">
-            <img src="./images/logo.png" width="150"/>
+            <img src={require('../images/logo.png')} width="150"/>
           </div>
           <span>Name: </span> <span>Jessica Smith</span><br />
           <span>Email: </span> <span>jessica.smith@formedapp.com</span>
