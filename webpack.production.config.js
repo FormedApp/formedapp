@@ -51,7 +51,13 @@ module.exports = {
     }, {
       test: /\.css$/,
       loader: ExtractTextPlugin.extract('style', 'css?modules&localIdentName=[name]---[local]---[hash:base64:5]!postcss')
-    }]
+    },{
+		test: /\.(png|jpg|gif)$/,
+	  loader: "file-loader?name=img/img-[hash:6].[ext]"},
+{
+		test: /\.scss$/,
+		loaders: ["style", "css", "sass"]	
+	}]
   },
   postcss: [
     require('autoprefixer')
