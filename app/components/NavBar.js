@@ -18,7 +18,7 @@ class NavBar extends React.Component {
 					<button type="button" className="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 						<i className="fa fa-ellipsis-v"></i>
 					</button>
-					<a className="navbar-brand" href="#"><img src="./images/logo.png" width="45"/></a>
+					<a className="navbar-brand" href="#"><img src={require('../images/logo.png')} width="45"/></a>
 					<span className="view-title">Formed</span>
 				</div>
 				<div id="navbar" className="navbar-collapse collapse">

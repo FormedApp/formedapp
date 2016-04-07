@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import CSS from "./css/style.scss";
-import autobind from 'autobind-decorator';
-import reactMixin from 'react-mixin';
-import Catalyst from 'react-catalyst';
 
 // header & footer
 import NavBar from "./components/NavBar";

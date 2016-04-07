@@ -4,9 +4,7 @@
 
 import React from 'react';
 import Post from './Post';
-import autobind from 'autobind-decorator';
 
-@autobind
 class Feed extends React.Component {
 
 	constructor(){

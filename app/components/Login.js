@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
 import {History} from 'react-router';
-import reactMixin from 'react-mixin';
-import autobind from 'autobind-decorator';
 
-@autobind
 class Login extends React.Component {
 	handleClick(newRoute) {
 		if (newRoute) {
@@ -17,7 +14,7 @@ class Login extends React.Component {
 				<div className="row">
 					<div className="col-xs-8 col-xs-offset-2">
 						<form className="login">
-							<img src="./images/logo-wide.png" className="img-responsive" alt="formed app logo"/>
+							<img src={require('../images/logo-wide.png')} className="img-responsive" alt="formed app logo"/>
 							<fieldset className="form-group">
 								<input type="text" className="form-control" placeholder="Email"/>
 							</fieldset>

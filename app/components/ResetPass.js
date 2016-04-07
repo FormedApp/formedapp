@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
 import {History} from 'react-router';
-import reactMixin from 'react-mixin';
-import autobind from 'autobind-decorator';
 
-@autobind
 class ResetPass extends React.Component {
 	handleClick(newRoute) {
 		if (newRoute) {

@@ -11,8 +11,8 @@ class Profile extends React.Component {
   render() {
     return (
       <div className="container">
-        <div class="col-md-6 col-md-offset-3 profile text-center">
-          <div class="logo">
+        <div className="col-md-6 col-md-offset-3 profile text-center">
+          <div className="logo">
             <img src="./images/logo.png" width="150"/>
           </div>
           <span>Name: </span> <span>Jessica Smith</span><br />

@@ -1,9 +1,6 @@
 import React, {Component} from 'react';
 import {History} from 'react-router';
-import reactMixin from 'react-mixin';
-import autobind from 'autobind-decorator';
 
-@autobind
 class Signup extends React.Component {
 	handleClick(newRoute) {
 		if (newRoute) {
