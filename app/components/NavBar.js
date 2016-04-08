@@ -3,7 +3,13 @@ import React, {Component} from 'react';
 class NavBar extends React.Component {
   handleNavClick(newRoute) {
 	// collapse nav
-	$('.navbar-toggle').click();
+	  //$('.navbar-toggle').click();
+	  $('#navbar li, #navbar a').click(function() {
+	      var navbar_toggle = $('.navbar-toggle');
+		      if (navbar_toggle.is(':visible')) {
+		         navbar_toggle.trigger('click');
+		      }
+  		});
 
 	if (newRoute) {
 		this.props.navChangeCallback(newRoute);
